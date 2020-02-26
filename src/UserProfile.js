@@ -7,6 +7,7 @@ const UserProfile = () => {
 		<div className='user-profile'>
 			<Avatar />
 			<UserName />
+			<button>Ingresar</button>
 		</div>
 	);
 };
