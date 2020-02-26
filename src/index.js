@@ -4,7 +4,12 @@ import UserProfile from "./UserProfile";
 import * as serviceWorker from "./serviceWorker";
 import "./main.scss";
 
-ReactDOM.render(<UserProfile />, document.getElementById("root"));
+ReactDOM.render(
+	<div>
+		<UserProfile />
+	</div>,
+	document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
