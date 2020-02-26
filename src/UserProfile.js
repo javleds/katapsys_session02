@@ -6,7 +6,7 @@ const UserProfile = () => {
 	return (
 		<div className='user-profile'>
 			<Avatar />
-			<UserName />
+			<UserName name='Oscar M Sanchez' />
 			<button>Ingresar</button>
 		</div>
 	);

@@ -1,7 +1,7 @@
 import React from "react";
 
-const UserName = () => {
-	return <h1>Hola Oscar M</h1>;
+const UserName = (props) => {
+	return <h1>Hola {props.name}</h1>;
 };
 
 export default UserName;
