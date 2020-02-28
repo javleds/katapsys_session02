@@ -8,8 +8,8 @@ class UserProfile extends React.Component {
 		super(props)
 
 		this.state = {
-			isLoggedIn: false,
-			name: undefined,
+			isLoggedIn: true,
+			name: 'Javier Ledezma',
 		}
 	}
 
@@ -17,7 +17,7 @@ class UserProfile extends React.Component {
 		return (
 			<div className='user-profile'>
 				<Avatar />
-				<UserName name='Javier Ledezma'/>
+				<UserName name={this.state.name}/>
 				<button>Ingresar</button>
 			</div>
 		)
