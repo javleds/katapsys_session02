@@ -14,15 +14,15 @@ class UserProfile extends React.Component {
 	}
 
 	render() {
-		const button = this.state.isLoggedIn
-			? <button>Salir</button>
-			: <button>Ingresar</button>;
-
 		return (
 			<div className='user-profile'>
 				<Avatar />
 				<UserName name={this.state.name}/>
-				{button}
+				{
+					this.state.isLoggedIn
+						? <button>Salir</button>
+						: <button>Ingresar</button>
+				}
 			</div>
 		);
 	}
