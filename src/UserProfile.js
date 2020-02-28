@@ -8,9 +8,17 @@ class UserProfile extends React.Component {
 		super(props);
 
 		this.state = {
-			isLoggedIn: true,
+			isLoggedIn: false,
 			name: 'Javier Ledezma',
 		};
+	}
+
+	onLogout() {
+		console.log('onLogOut');
+	}
+
+	onLogin() {
+		console.log('onLogOut');
 	}
 
 	render() {
@@ -20,8 +28,8 @@ class UserProfile extends React.Component {
 				<UserName name={this.state.name}/>
 				{
 					this.state.isLoggedIn
-						? <button>Salir</button>
-						: <button>Ingresar</button>
+						? <button onClick={this.onLogout}>Salir</button>
+						: <button onClick={this.onLogin}>Ingresar</button>
 				}
 			</div>
 		);
