@@ -14,13 +14,9 @@ class UserProfile extends React.Component {
 	}
 
 	render() {
-		let button = null;
-
-		if (this.state.isLoggedIn) {
-			button = <button>Salir</button>;
-		} else {
-			button = <button>Ingresar</button>;
-		}
+		const button = this.state.isLoggedIn
+			? <button>Salir</button>
+			: <button>Ingresar</button>;
 
 		return (
 			<div className='user-profile'>
