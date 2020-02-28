@@ -7,6 +7,9 @@ class UserProfile extends React.Component {
 	constructor(props) {
 		super(props);
 
+		this.onLogin = this.onLogin.bind(this);
+		this.onLogout = this.onLogout.bind(this);
+
 		this.state = {
 			isLoggedIn: false,
 			name: 'Javier Ledezma',
@@ -14,11 +17,17 @@ class UserProfile extends React.Component {
 	}
 
 	onLogout() {
-		console.log('onLogOut');
+		this.setState({
+			isLoggedIn: false,
+			name: undefined
+		});
 	}
 
 	onLogin() {
-		console.log('onLogOut');
+		this.setState({
+			isLoggedIn: true,
+			name: 'Javier L'
+		});
 	}
 
 	render() {
