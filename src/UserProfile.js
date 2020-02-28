@@ -6,6 +6,11 @@ class UserProfile extends React.Component {
 
 	constructor(props) {
 		super(props)
+
+		this.state = {
+			isLoggedIn: false,
+			name: undefined,
+		}
 	}
 
 	render() {
